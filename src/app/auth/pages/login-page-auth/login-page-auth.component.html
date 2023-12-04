@@ -1,0 +1,68 @@
+<section class="">
+  <div
+    class="flex flex-col items-center justify-center h-screen px-6 py-8 mx-auto lg:py-0"
+  >
+    <span
+      class="items-center my-3 text-5xl font-bold tracking-tighter text-orange-600 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"
+    >
+      FlickNet
+    </span>
+    <div
+      class="w-full bg-black shadow-md bg-opacity-70 rounded-2xl md:mt-0 sm:max-w-md xl:p-0"
+    >
+      <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+        <form
+          #form="ngForm"
+          class="space-y-4 md:space-y-6"
+          (ngSubmit)="login(form)"
+        >
+          <div>
+            <label for="email" class="block mb-2 font-medium text-white text-md"
+              >Email</label
+            >
+            <input
+              required=""
+              id="email"
+              name="email"
+              type="email"
+              [(ngModel)]="creds.email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5"
+              placeholder="user@gmail.com"
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block mb-2 font-medium text-white text-md"
+              >Password</label
+            >
+            <input
+              id="password"
+              name="password"
+              type="password"
+              [(ngModel)]="creds.password"
+              placeholder="••••••••"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5"
+              required=""
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full text-white bg-orange-600 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-md px-5 py-2.5 text-center"
+          >
+            Ingresar
+          </button>
+          <p class="text-white text-md">
+            ¿Tiene una cuenta?
+            <a
+              [routerLink]="['/autenticacion/nueva-cuenta']"
+              class="font-bold text-white hover:underline"
+              >Registrarse</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
