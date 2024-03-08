@@ -2,7 +2,7 @@
 
 <hr>
 
-Repositorio del Backend : [Repositorio](https://github.com/Manuel486/Sistema_recomendacion_peliculas_backend)
+Repositorio del Backend : [Sistema de recomendación de peliculas - BACKEND](https://github.com/Manuel486/Sistema_recomendacion_peliculas_backend)
 
 ## Login
 
