@@ -1,6 +1,9 @@
 # Sistema de Recomendación de Peliculas
 
 <hr>
+
+Repositorio del Backend : [Repositorio](https://github.com/Manuel486/Sistema_recomendacion_peliculas_backend)
+
 ## Login
 
 ![Login](./src/assets/Login.png)
